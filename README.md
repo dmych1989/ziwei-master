@@ -5,7 +5,7 @@
 融合紫微三合派、中州派方法论，用 Python / JavaScript 精确排盘，AI 生成有温度的解读，暗色星空主题 HTML 可视化输出，并支持 Capacitor 打包为安卓 APK。
 
 ---
-
+![](https://github.com/dmych1989/ziwei-master/blob/main/p.png)
 ## 特性
 
 - **精确排盘** —— 基于 [iztro](https://github.com/SylarLong/iztro)（JS）/ [iztro-py](https://github.com/spyfree/iztro-py)（Python）做数学级排盘，避免 LLM 算错。
