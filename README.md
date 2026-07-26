@@ -118,7 +118,8 @@ pip install iztro-py
 python scripts/calculate_chart.py    # 排盘
 python scripts/generate_html.py      # 生成 HTML 命盘
 ```
-
+## 1.1
+![](https://github.com/dmych1989/ziwei-master/blob/main/ScreenShot_2026-07-22_151201_972.png)
 ---
 
 ## 许可证
