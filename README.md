@@ -53,7 +53,7 @@ python3 -m pip install iztro-py --user --break-system-packages
 打开你正在用的 agent（Claude Code、Codex、Cursor 等），告诉它：
 
 ```
-帮我安装这个 skill：https://github.com/learnwithu/mingli-master
+帮我安装这个 skill：https://github.com/dmych1989/mingli-master
 ```
 
 或者用通用 CLI 安装器（[vercel-labs/skills](https://github.com/dmych1989/skills)）：
