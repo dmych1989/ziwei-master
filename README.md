@@ -1,10 +1,13 @@
 # 天纪紫薇
 
-
+![](assets/musk-mingpan.jpg)
 
 > *「Elon Musk 的命盘示例」*
 
-[![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)[](https://agentskills.io)[](https://python.org)[](https://github.com/spyfree/iztro-py)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Standard-green)](https://agentskills.io)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org)
+[![iztro-py](https://img.shields.io/badge/Powered%20by-iztro--py-C8A96E)](https://github.com/spyfree/iztro-py)
 
 **输入生辰信息，生成一张精美的紫微斗数可视化命盘解读报告。**
 
@@ -12,7 +15,7 @@
 
 [效果示例](#效果示例) · [安装](#安装) · [使用](#使用) · [工作原理](#工作原理) · [仓库结构](#仓库结构)
 
-* * *
+---
 
 ## 效果示例
 
@@ -26,14 +29,14 @@
 
 不仅是生辰解读，每张命盘都包含：
 
-* **命盘底色** — 先天禀赋与性格核心
-* **事业财运** — 官禄宫 + 财帛宫格局
-* **感情婚姻** — 夫妻宫缘分模式
-* **当前大限** — 此阶段核心课题
+- **命盘底色** — 先天禀赋与性格核心
+- **事业财运** — 官禄宫 + 财帛宫格局
+- **感情婚姻** — 夫妻宫缘分模式
+- **当前大限** — 此阶段核心课题
 
 **[查看完整示例命盘 →](https://github.com/learnwithu/mingli-master/blob/main/assets/musk-mingpan.jpg)**
 
-* * *
+---
 
 ## 安装
 
@@ -43,28 +46,36 @@
 
 天纪紫薇使用 [iztro-py](https://github.com/spyfree/iztro-py) 进行精确排盘计算，避免 LLM 排盘错误。使用前需要安装：
 
-    python3 -m pip install iztro-py --user --break-system-packages
+```bash
+python3 -m pip install iztro-py --user --break-system-packages
+```
 
 ### 一行命令（推荐，跨 runtime）
 
 打开你正在用的 agent（Claude Code、Codex、Cursor 等），告诉它：
 
-    帮我安装这个 skill：https://github.com/learnwithu/mingli-master
+```
+帮我安装这个 skill：https://github.com/learnwithu/mingli-master
+```
 
 或者用通用 CLI 安装器（[vercel-labs/skills](https://github.com/vercel-labs/skills)）：
 
-    npx skills add learnwithu/mingli-master
+```bash
+npx skills add learnwithu/mingli-master
+```
 
 ## 使用
 
 装好后，直接用自然语言告诉 agent：
 
-    帮我排个命盘，1991年8月15日，丑时，男
-    算算我的事业和财运
-    看看我今年的运势
-    这是我的掌纹照片，帮我交叉比对一下
+```
+帮我排个命盘，1991年8月15日，丑时，男
+算算我的事业和财运
+看看我今年的运势
+这是我的掌纹照片，帮我交叉比对一下
+```
 
-* * *
+---
 
 ## 工作原理
 
@@ -78,51 +89,53 @@
 
 **4. HTML 可视化** — 将排盘数据和解读文字填入固定模板，生成暗色星空主题的可视化命盘。
 
-* * *
+---
 
 ## 仓库结构
 
-    mingli-master/
-    ├── SKILL.md                          # 天纪紫薇本体
-    ├── README.md                         # 本文件
-    ├── scripts/
-    │   ├── calculate_chart.py            # 排盘计算脚本（基于 iztro-py）
-    │   └── generate_html.py              # HTML 命盘生成脚本
-    ├── templates/
-    │   └── chart_template.html           # 命盘 HTML 模板（暗色星空主题）
-    ├── references/
-    │   ├── interpretation_guide.md       # 解读风格指南
-    │   ├── stars_reference.md            # 十四主星 + 六吉六煞参考
-    │   └── four_hua_reference.md         # 四化飞星参考
-    └── assets/
-        └── mingpan_ziwei.html               # 示例命盘
+```
+mingli-master/
+├── SKILL.md                          # 天纪紫薇本体
+├── README.md                         # 本文件
+├── scripts/
+│   ├── calculate_chart.py            # 排盘计算脚本（基于 iztro-py）
+│   └── generate_html.py              # HTML 命盘生成脚本
+├── templates/
+│   └── chart_template.html           # 命盘 HTML 模板（暗色星空主题）
+├── references/
+│   ├── interpretation_guide.md       # 解读风格指南
+│   ├── stars_reference.md            # 十四主星 + 六吉六煞参考
+│   └── four_hua_reference.md         # 四化飞星参考
+└── assets/
+    └── mingpan_ziwei.html               # 示例命盘
+```
 
-* * *
+---
 
 ## 为什么不用 LLM 直接算？
 
 LLM 排盘会犯错。紫微斗数排盘涉及：
 
-* 安命宫（根据生月 + 生时）
-* 定五行局（根据命宫地支 + 生年天干）
-* 安十四主星（根据五行局 + 生日）
-* 四化飞星（根据生年天干）
+- 安命宫（根据生月 + 生时）
+- 定五行局（根据命宫地支 + 生年天干）
+- 安十四主星（根据五行局 + 生日）
+- 四化飞星（根据生年天干）
 
 这些全是精确的数学运算。LLM 靠"记忆"来算，换个生辰就可能算错（比如五行局写错、禄权顺序反了）。Python 脚本保证每次排盘 100% 一致且正确。
 
-* * *
+---
 
 ## 致谢
 
-* [iztro](https://github.com/SylarLong/iztro) — 紫微斗数排盘 JavaScript 库（3648+ stars）
-* [iztro-py](https://github.com/spyfree/iztro-py) — 纯 Python iztro 实现
+- [iztro](https://github.com/SylarLong/iztro) — 紫微斗数排盘 JavaScript 库（3648+ stars）
+- [iztro-py](https://github.com/spyfree/iztro-py) — 纯 Python iztro 实现
 
-* * *
+---
 
 ## 许可证
 
 MIT
 
-* * *
+---
 
 *「算命是对话，不是表演。准确度随沟通趋近。」*
