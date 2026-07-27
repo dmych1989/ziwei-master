@@ -1,6 +1,6 @@
 # 天纪紫薇
 
-![](assets/musk-mingpan.jpg)
+![](https://github.com/dmych1989/ziwei-master/blob/main/ScreenShot_2026-07-22_151201_972.png)
 
 > *「Elon Musk 的命盘示例」*
 
@@ -33,8 +33,6 @@
 - **事业财运** — 官禄宫 + 财帛宫格局
 - **感情婚姻** — 夫妻宫缘分模式
 - **当前大限** — 此阶段核心课题
-
-**[查看完整示例命盘 →](https://github.com/learnwithu/mingli-master/blob/main/assets/musk-mingpan.jpg)**
 
 ---
 
