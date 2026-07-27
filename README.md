@@ -56,7 +56,7 @@ python3 -m pip install iztro-py --user --break-system-packages
 帮我安装这个 skill：https://github.com/dmych1989/mingli-master
 ```
 
-或者用通用 CLI 安装器（[vercel-labs/skills](https://github.com/dmych1989/skills)）：
+或者用通用 CLI 安装器（[dmych1989/skills](https://github.com/dmych1989/skills)）：
 
 ```bash
 npx skills add dmych1989/mingli-master
