@@ -1,6 +1,6 @@
 # 天纪紫薇
 
-![](https://github.com/dmych1989/ziwei-master/blob/main/ScreenShot_2026-07-22_151201_972.png)
+![](https://github.com/dmych1989/ziwei-master/blob/main/p.png)
 
 > *「Elon Musk 的命盘示例」*
 
